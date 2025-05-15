@@ -41,7 +41,7 @@ def test_main_2():
     binom_pts = binom_df['ngss_pred'].values
     
     import matplotlib.pyplot as plt
-    fig = plt.figure(figsize=(10,12))
+    fig = plt.figure(figsize=(8,8), layout = 'constrained')
     ax = plt.axes(projection='3d')
 
     z = y_train
@@ -49,19 +49,16 @@ def test_main_2():
     y = X_train[:,1]
     c = x+y
 
-
+    level_1 = 1072
+    level_2 = 1098
+    level_3 = 1140
     X_vals = math_df['SAT_Math'].values
     Y_vals = read_df['SAT_Reading'].values
-    zero_ish = np.arange(0,1,len(X_vals))
-    surface = False
-    if surface:
-        x_surf = np.arange(200,900,100)
-        y_surf = np.arange(200,900,100)
-        X_surf,Y_surf = np.meshgrid(x_surf, y_surf)
-        Z_surf1 = (X_surf*1099/X_surf + Y_surf*1099/Y_surf) / 2 - 1
-        Z_surf2 = (X_surf*1099/X_surf + Y_surf*1099/Y_surf) / 2  + 1
-        ax.plot_surface(X_surf,Y_surf, Z_surf1,color=(0.0, 1.0, 0.2, 0.2))
-        ax.plot_surface(X_surf,Y_surf, Z_surf2,color=(0.0, 1.0, 0.2, 0.2))
+    zero_ish = np.arange(0,0.1,len(X_vals))
+    
+
+
+
     tensor_effect = 0
     # Linear GAM trendline
     #ax.plot(df['SAT_Math'].values,df['SAT_Reading'].values, binom_pts,linewidth=4,c=(0.0,0.9,0.0,0.8))
@@ -80,6 +77,20 @@ def test_main_2():
     ax.set_zlabel('NGSS Score')
     plt.style.use("dark_background")
 
+    surface = st.checkbox("Show Levels", value=False)
+    if surface:
+        x_surf = np.arange(200,900,100)
+        y_surf = np.arange(200,900,100)
+        X_surf,Y_surf = np.meshgrid(x_surf, y_surf)
+        
+        Z_surf1 = (X_surf*level_1/X_surf + Y_surf*level_1/Y_surf) / 2
+        ax.plot_surface(X_surf,Y_surf, Z_surf1,color=(1.0, 0.5, 0.0, 0.4))
+        
+        Z_surf2 = (X_surf*level_2/X_surf + Y_surf*level_2/Y_surf) / 2
+        ax.plot_surface(X_surf,Y_surf, Z_surf2,color=(0.0, 1.0, 0.2, 0.3))
+
+        Z_surf3 = (X_surf*level_3/X_surf + Y_surf*level_3/Y_surf) / 2
+        ax.plot_surface(X_surf,Y_surf, Z_surf3,color=(0.0, 0.2, 0.8, 0.2))
     
     col1, col2,col3,col4, col5,col6 = st.columns([2,2,1,1,1,1])
     with col1:
