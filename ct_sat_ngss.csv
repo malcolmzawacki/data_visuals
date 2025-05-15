@@ -1,0 +1,393 @@
+Year,District,ELA,Math,NGSS
+2019,Avon School District,583,588,69.7
+2019,Berlin School District,537,516,57.7
+2019,Bethel School District,529,523,67.3
+2019,Branford School District,523,513,50.2
+2019,Bridgeport School District,435,413,17.1
+2019,Bristol School District,500,484,41
+2019,Brookfield School District,549,550,55.3
+2019,Canton School District,565,555,77.3
+2019,Capitol Region Education Council,487,458,32.1
+2019,Cheshire School District,571,562,65.6
+2019,Clinton School District,537,492,48.8
+2019,Colchester School District,532,509,58.5
+2019,Connecticut Technical Education and Career System,454,434,30.8
+2019,Coventry School District,541,532,57.1
+2019,Cromwell School District,525,510,36.5
+2019,Danbury School District,482,454,38.2
+2019,Darien School District,611,628,76.5
+2019,Derby School District,463,423,17.6
+2019,East Hampton School District,539,501,37.9
+2019,East Hartford School District,458,443,34.1
+2019,East Lyme School District,554,533,62
+2019,Enfield School District,508,499,68.4
+2019,Fairfield School District,566,570,73.3
+2019,Farmington School District,578,575,84.4
+2019,Glastonbury School District,570,583,72.9
+2019,Granby School District,570,551,80.8
+2019,Greenwich School District,579,571,81.7
+2019,Griswold School District,491,461,42.9
+2019,Groton School District,516,502,49.8
+2019,Guilford School District,577,576,73.9
+2019,Hamden School District,497,474,27.7
+2019,Hartford School District,453,436,21.6
+2019,Killingly School District,502,474,35.2
+2019,Learn,525,495,47.6
+2019,Ledyard School District,517,498,57.7
+2019,Madison School District,579,579,49.8
+2019,Manchester School District,480,469,24.9
+2019,Meriden School District,453,424,28.2
+2019,Middletown School District,492,471,27.5
+2019,Milford School District,527,514,51.8
+2019,Monroe School District,564,570,66.4
+2019,Montville School District,520,479,42.9
+2019,Naugatuck School District,473,446,29.5
+2019,New Britain School District,428,412,16.6
+2019,New Canaan School District,618,619,75.4
+2019,New Fairfield School District,546,522,48.1
+2019,New Haven School District,444,423,17.2
+2019,New London School District,442,431,18.4
+2019,New Milford School District,530,530,55.9
+2019,Newington School District,536,528,52.8
+2019,Newtown School District,573,579,59.7
+2019,North Haven School District,516,504,41.4
+2019,Norwalk School District,491,478,27.3
+2019,Norwich Free Academy District,497,479,48.4
+2019,Old Saybrook School District,532,528,52.7
+2019,Oxford School District,523,489,43.5
+2019,Plainville School District,507,498,48.7
+2019,Regional School District 04,565,537,54.5
+2019,Regional School District 05,569,563,71.3
+2019,Regional School District 07,551,562,64.1
+2019,Regional School District 08,565,571,64.5
+2019,Regional School District 09,588,587,75.9
+2019,Regional School District 10,554,527,61.5
+2019,Regional School District 13,562,535,64.8
+2019,Regional School District 15,564,569,72.3
+2019,Regional School District 16,543,542,51.8
+2019,Regional School District 17,555,544,68.3
+2019,Regional School District 18,580,580,71.4
+2019,Regional School District 19,556,572,59.5
+2019,Ridgefield School District,604,604,70.6
+2019,Rocky Hill School District,528,521,55.4
+2019,Seymour School District,511,493,32.5
+2019,Shelton School District,534,528,59.3
+2019,Simsbury School District,589,577,82.6
+2019,Somers School District,543,518,41.1
+2019,South Windsor School District,557,554,63.4
+2019,Southington School District,532,532,62.5
+2019,Stamford School District,497,488,33.3
+2019,Stonington School District,551,532,59.9
+2019,Stratford School District,484,463,33.7
+2019,Suffield School District,549,525,75.4
+2019,The Woodstock Academy District,520,528,53.4
+2019,Tolland School District,558,571,71.1
+2019,Torrington School District,483,461,25.4
+2019,Trumbull School District,559,567,82.9
+2019,Vernon School District,504,486,53.3
+2019,Wallingford School District,520,502,60.9
+2019,Waterbury School District,435,407,19.3
+2019,Waterford School District,525,515,52.3
+2019,Watertown School District,495,482,37.8
+2019,West Hartford School District,566,556,76.7
+2019,West Haven School District,469,436,38.3
+2019,Weston School District,604,590,83.7
+2019,Westport School District,612,610,81.3
+2019,Wethersfield School District,527,514,49.1
+2019,Wilton School District,614,595,71
+2019,Windham School District,441,420,15.9
+2019,Windsor School District,489,468,47.5
+2022,Avon School District,576,574,76.9
+2022,Berlin School District,522,516,59.7
+2022,Bethel School District,519,508,66.9
+2022,Branford School District,495,472,41.9
+2022,Bridgeport School District,434,408,15.7
+2022,Bristol School District,482,462,39.1
+2022,Brookfield School District,539,530,57.6
+2022,Canton School District,548,531,65.8
+2022,Capitol Region Education Council,445,419,21.9
+2022,Cheshire School District,553,541,56.3
+2022,Clinton School District,519,513,51.3
+2022,Colchester School District,516,516,51.2
+2022,Connecticut Technical Education and Career System,440,420,31.1
+2022,Coventry School District,510,497,53.9
+2022,Cromwell School District,508,507,57.2
+2022,Danbury School District,457,434,22.4
+2022,Darien School District,599,617,69.7
+2022,Derby School District,467,432,16.4
+2022,East Hampton School District,502,479,46.3
+2022,East Hartford School District,448,436,30.8
+2022,East Lyme School District,571,554,75.5
+2022,Enfield School District,485,472,60.2
+2022,Fairfield School District,562,553,62.8
+2022,Farmington School District,573,558,75.3
+2022,Glastonbury School District,563,563,64.9
+2022,Granby School District,547,530,77.4
+2022,Greenwich School District,570,563,79.9
+2022,Griswold School District,487,464,58.3
+2022,Groton School District,495,476,43.7
+2022,Guilford School District,565,562,62.1
+2022,Hamden School District,486,463,28.3
+2022,Hartford School District,436,418,20
+2022,Killingly School District,504,466,39
+2022,Learn,565,530,67
+2022,Ledyard School District,517,510,48.1
+2022,Madison School District,553,564,53.1
+2022,Manchester School District,461,451,33.6
+2022,Meriden School District,453,423,23.9
+2022,Middletown School District,463,441,24.7
+2022,Milford School District,514,504,44.8
+2022,Monroe School District,548,536,58.3
+2022,Montville School District,509,486,40.8
+2022,Naugatuck School District,471,441,31.6
+2022,New Britain School District,436,407,24.7
+2022,New Canaan School District,587,581,80.8
+2022,New Fairfield School District,513,508,38.6
+2022,New Haven School District,439,416,16.3
+2022,New London School District,433,414,19.1
+2022,New Milford School District,528,509,45.9
+2022,Newington School District,498,502,44.7
+2022,Newtown School District,539,545,51.5
+2022,North Haven School District,516,509,48
+2022,Norwalk School District,477,466,28.7
+2022,Norwich Free Academy District,479,452,31.7
+2022,Old Saybrook School District,538,530,40.7
+2022,Oxford School District,519,490,51.9
+2022,Plainville School District,491,479,36.8
+2022,Regional School District 04,563,527,55.6
+2022,Regional School District 05,576,576,68.4
+2022,Regional School District 07,521,498,58.6
+2022,Regional School District 08,549,549,56.9
+2022,Regional School District 09,571,563,78.8
+2022,Regional School District 10,536,509,57.8
+2022,Regional School District 13,542,526,68
+2022,Regional School District 15,550,550,54.6
+2022,Regional School District 16,514,503,38.7
+2022,Regional School District 17,545,516,46
+2022,Regional School District 18,583,577,71.6
+2022,Regional School District 19,550,541,57.9
+2022,Ridgefield School District,592,580,65.6
+2022,Rocky Hill School District,549,539,53.2
+2022,Seymour School District,503,482,38.4
+2022,Shelton School District,509,497,49.7
+2022,Simsbury School District,577,562,87.9
+2022,Somers School District,521,523,46.1
+2022,South Windsor School District,541,550,57.3
+2022,Southington School District,522,518,63.2
+2022,Stamford School District,493,473,34.4
+2022,Stonington School District,537,517,64
+2022,Stratford School District,466,438,31
+2022,Suffield School District,530,507,56.5
+2022,The Woodstock Academy District,516,497,41.6
+2022,Tolland School District,546,556,38.8
+2022,Torrington School District,477,454,33.1
+2022,Trumbull School District,546,557,73.6
+2022,Vernon School District,474,457,38.6
+2022,Wallingford School District,513,496,61
+2022,Waterbury School District,425,397,13.6
+2022,Waterford School District,529,499,48.6
+2022,Watertown School District,493,466,44.1
+2022,West Hartford School District,549,545,70.1
+2022,West Haven School District,449,429,30.4
+2022,Weston School District,607,587,77.3
+2022,Westport School District,604,618,57.8
+2022,Wethersfield School District,502,488,43
+2022,Wilton School District,590,576,63.8
+2022,Windham School District,424,399,15.3
+2022,Windsor School District,478,466,54.3
+2023,Avon School District,586,586,77.7
+2023,Berlin School District,523,511,71.6
+2023,Bethel School District,527,501,68.6
+2023,Branford School District,497,502,44.3
+2023,Bridgeport School District,421,397,14.6
+2023,Bristol School District,472,453,40.8
+2023,Brookfield School District,522,514,45.9
+2023,Canton School District,556,544,66
+2023,Capitol Region Education Council,448,429,25.4
+2023,Cheshire School District,544,538,67.7
+2023,Clinton School District,505,497,55.9
+2023,Colchester School District,523,524,57.8
+2023,Connecticut Technical Education and Career System,442,425,37.8
+2023,Coventry School District,519,516,69.5
+2023,Cromwell School District,503,505,56.9
+2023,Danbury School District,450,435,30.8
+2023,Darien School District,598,606,73
+2023,Derby School District,440,412,21.1
+2023,East Hampton School District,519,504,58.5
+2023,East Hartford School District,450,437,31.1
+2023,East Lyme School District,550,543,65.8
+2023,Enfield School District,483,482,60.5
+2023,Fairfield School District,556,549,64.3
+2023,Farmington School District,569,558,80.8
+2023,Glastonbury School District,551,554,65.4
+2023,Granby School District,542,534,83.1
+2023,Greenwich School District,567,567,78.6
+2023,Griswold School District,473,459,40.8
+2023,Groton School District,505,493,42.9
+2023,Guilford School District,563,569,58.8
+2023,Hamden School District,464,448,29.1
+2023,Hartford School District,427,412,20.4
+2023,Killingly School District,496,482,55.7
+2023,Learn,527,514,60
+2023,Ledyard School District,506,492,59
+2023,Madison School District,562,574,61.4
+2023,Manchester School District,455,442,28
+2023,Meriden School District,446,417,28.5
+2023,Middletown School District,469,445,38.5
+2023,Milford School District,509,492,47.2
+2023,Monroe School District,545,543,46.2
+2023,Montville School District,501,481,46.9
+2023,Naugatuck School District,453,432,32.9
+2023,New Britain School District,422,407,20.1
+2023,New Canaan School District,597,611,83.1
+2023,New Fairfield School District,527,528,55.7
+2023,New Haven School District,432,413,22.5
+2023,New London School District,411,406,14.8
+2023,New Milford School District,505,492,40.8
+2023,Newington School District,504,508,59.7
+2023,Newtown School District,545,551,70
+2023,North Haven School District,506,507,64
+2023,Norwalk School District,459,447,29.6
+2023,Norwich Free Academy District,459,447,37.1
+2023,Old Saybrook School District,534,531,56.8
+2023,Oxford School District,523,517,61.4
+2023,Plainville School District,505,499,49.4
+2023,Regional School District 04,524,503,56.6
+2023,Regional School District 05,559,557,59
+2023,Regional School District 07,528,520,63.6
+2023,Regional School District 08,540,532,53.6
+2023,Regional School District 09,577,576,86.2
+2023,Regional School District 10,535,518,61.9
+2023,Regional School District 13,530,520,80.5
+2023,Regional School District 15,533,535,51.1
+2023,Regional School District 16,524,526,58.6
+2023,Regional School District 17,552,539,80.6
+2023,Regional School District 18,583,580,76.2
+2023,Regional School District 19,531,512,57.1
+2023,Ridgefield School District,582,569,67.5
+2023,Rocky Hill School District,545,561,65.3
+2023,Seymour School District,508,493,50
+2023,Shelton School District,495,497,54.1
+2023,Simsbury School District,550,549,84.6
+2023,Somers School District,514,507,52
+2023,South Windsor School District,529,544,73.4
+2023,Southington School District,505,505,63.5
+2023,Stamford School District,484,476,34.4
+2023,Stonington School District,534,512,81.5
+2023,Stratford School District,466,462,34.4
+2023,Suffield School District,525,514,64.9
+2023,The Woodstock Academy District,510,486,57.7
+2023,Tolland School District,543,551,64.3
+2023,Torrington School District,460,428,32.9
+2023,Trumbull School District,537,546,73.7
+2023,Vernon School District,471,456,44.8
+2023,Wallingford School District,497,479,58.8
+2023,Waterbury School District,419,404,13.8
+2023,Waterford School District,535,519,57.5
+2023,Watertown School District,486,478,47.2
+2023,West Hartford School District,542,546,72.3
+2023,West Haven School District,447,429,42.8
+2023,Weston School District,597,575,77.9
+2023,Westport School District,602,613,67.2
+2023,Wethersfield School District,494,485,43.2
+2023,Wilton School District,607,601,90.2
+2023,Windham School District,398,384,11.5
+2023,Windsor School District,472,457,47.2
+2024,Avon School District,575,555,57.3
+2024,Berlin School District,520,499,74.2
+2024,Bethel School District,521,510,75.9
+2024,Branford School District,506,485,40.9
+2024,Bridgeport School District,412,391,17.7
+2024,Bristol School District,458,443,52
+2024,Brookfield School District,534,507,60.7
+2024,Canton School District,550,520,82.9
+2024,Capitol Region Education Council,444,407,27.1
+2024,Cheshire School District,553,532,68.6
+2024,Clinton School District,498,490,54.8
+2024,Colchester School District,512,497,49.2
+2024,Connecticut Technical Education and Career System,431,414,36
+2024,Coventry School District,527,502,75.9
+2024,Cromwell School District,528,506,57.3
+2024,Danbury School District,432,419,29.7
+2024,Darien School District,605,594,74.9
+2024,Derby School District,439,398,25.5
+2024,East Hampton School District,528,489,63
+2024,East Hartford School District,439,425,27.5
+2024,East Lyme School District,557,517,61.2
+2024,Enfield School District,497,481,62.2
+2024,Fairfield School District,565,540,66.2
+2024,Farmington School District,568,547,73
+2024,Glastonbury School District,566,555,62.1
+2024,Granby School District,562,526,75.9
+2024,Greenwich School District,578,566,85.8
+2024,Griswold School District,469,447,57.7
+2024,Groton School District,481,467,41.9
+2024,Guilford School District,561,545,55.3
+2024,Hamden School District,478,450,33.2
+2024,Hartford School District,413,402,19.8
+2024,Killingly School District,481,441,32.3
+2024,Learn,543,498,64.3
+2024,Ledyard School District,503,474,56.9
+2024,Madison School District,569,570,74.6
+2024,Manchester School District,452,439,30.3
+2024,Meriden School District,440,419,30.3
+2024,Middletown School District,461,427,29
+2024,Milford School District,509,486,46.2
+2024,Monroe School District,532,507,53.4
+2024,Montville School District,482,451,38.8
+2024,Naugatuck School District,445,417,34
+2024,New Britain School District,419,393,16.3
+2024,New Canaan School District,599,588,85.2
+2024,New Fairfield School District,528,507,43.7
+2024,New Haven School District,438,411,22.3
+2024,New London School District,388,379,19.1
+2024,New Milford School District,510,477,44.5
+2024,Newington School District,503,490,64.3
+2024,Newtown School District,548,535,55.4
+2024,North Haven School District,515,497,67.9
+2024,Norwalk School District,459,455,31
+2024,Norwich Free Academy District,467,440,39.1
+2024,Old Saybrook School District,545,515,56.8
+2024,Oxford School District,506,500,49
+2024,Plainville School District,499,489,43.2
+2024,Regional School District 04,499,477,47.2
+2024,Regional School District 05,553,532,50.8
+2024,Regional School District 07,517,493,50
+2024,Regional School District 08,534,523,59.7
+2024,Regional School District 09,569,553,89.8
+2024,Regional School District 10,539,489,67.1
+2024,Regional School District 13,532,501,62.6
+2024,Regional School District 15,540,544,66.3
+2024,Regional School District 16,514,494,57.5
+2024,Regional School District 17,548,536,69.6
+2024,Regional School District 18,569,551,77.4
+2024,Regional School District 19,534,504,62
+2024,Ridgefield School District,590,573,74.9
+2024,Rocky Hill School District,516,519,48.7
+2024,Seymour School District,499,477,43.2
+2024,Shelton School District,514,505,47.8
+2024,Simsbury School District,574,555,86.6
+2024,Somers School District,537,504,63.7
+2024,South Windsor School District,545,540,78.7
+2024,Southington School District,516,494,58.6
+2024,Stamford School District,474,453,32.7
+2024,Stonington School District,551,517,77.5
+2024,Stratford School District,448,425,33.1
+2024,Suffield School District,539,509,72.4
+2024,The Woodstock Academy District,518,484,44.9
+2024,Tolland School District,535,522,46.8
+2024,Torrington School District,463,447,26.8
+2024,Trumbull School District,545,543,72.6
+2024,Vernon School District,475,450,44.7
+2024,Wallingford School District,489,463,55.3
+2024,Waterbury School District,412,390,13.8
+2024,Waterford School District,543,530,66.7
+2024,Watertown School District,481,437,40.7
+2024,West Hartford School District,555,534,70.7
+2024,West Haven School District,437,422,37.8
+2024,Weston School District,600,562,85.9
+2024,Westport School District,612,602,80.1
+2024,Wethersfield School District,510,490,50.9
+2024,Wilton School District,605,599,91.2
+2024,Windham School District,419,390,22.3
+2024,Windsor School District,490,467,63.4

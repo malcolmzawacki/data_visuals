@@ -1,7 +1,7 @@
 import streamlit as st
 
 def test_main_2():
-    
+    st.title("School NGSS Scores vs SAT Math and Reading Scores")
     import pandas as pd
     import numpy as np
 
@@ -41,7 +41,7 @@ def test_main_2():
     binom_pts = binom_df['ngss_pred'].values
     
     import matplotlib.pyplot as plt
-    fig = plt.figure(figsize=(10,12))
+    fig = plt.figure(figsize=(8,8), layout = 'constrained')
     ax = plt.axes(projection='3d')
 
     z = y_train
@@ -49,20 +49,17 @@ def test_main_2():
     y = X_train[:,1]
     c = x+y
 
-
+    level_1 = 1072
+    level_2 = 1098
+    level_3 = 1140
     X_vals = math_df['SAT_Math'].values
     Y_vals = read_df['SAT_Reading'].values
-    zero_ish = np.arange(0,1,len(X_vals))
-    surface = False
-    if surface:
-        x_surf = np.arange(200,900,100)
-        y_surf = np.arange(200,900,100)
-        X_surf,Y_surf = np.meshgrid(x_surf, y_surf)
-        Z_surf1 = (X_surf*1099/X_surf + Y_surf*1099/Y_surf) / 2 - 1
-        Z_surf2 = (X_surf*1099/X_surf + Y_surf*1099/Y_surf) / 2  + 1
-        ax.plot_surface(X_surf,Y_surf, Z_surf1,color=(0.0, 1.0, 0.2, 0.2))
-        ax.plot_surface(X_surf,Y_surf, Z_surf2,color=(0.0, 1.0, 0.2, 0.2))
+    zero_ish = np.arange(0,0.1,len(X_vals))
     
+
+
+
+    tensor_effect = 0
     # Linear GAM trendline
     #ax.plot(df['SAT_Math'].values,df['SAT_Reading'].values, binom_pts,linewidth=4,c=(0.0,0.9,0.0,0.8))
     ax.plot(X_vals,Y_vals,math_effect + reading_effect + year_effect + tensor_effect + coeff,linewidth=4,c=(0.0,0.9,0.0,0.8))
@@ -80,21 +77,36 @@ def test_main_2():
     ax.set_zlabel('NGSS Score')
     plt.style.use("dark_background")
 
-    
-    col1, col2,col3,col4, col5,col6 = st.columns([2,2,1,1,1,1])
+    col1, col2, col3 = st.columns([5,5,2])
     with col1:
         elevation = st.slider("Elevation", min_value=0, max_value=90, value = 0)
     with col2:
         azimuth = st.slider("Rotation", min_value=-90, max_value=15, value = 0)
-    side_roll = 0
     with col3:
+        surface = st.checkbox("Show Levels", value=False)
+        if surface:
+            x_surf = np.arange(200,900,100)
+            y_surf = np.arange(200,900,100)
+            X_surf,Y_surf = np.meshgrid(x_surf, y_surf)
+            
+            Z_surf1 = (X_surf*level_1/X_surf + Y_surf*level_1/Y_surf) / 2
+            ax.plot_surface(X_surf,Y_surf, Z_surf1,color=(1.0, 0.5, 0.0, 0.4))
+            
+            Z_surf2 = (X_surf*level_2/X_surf + Y_surf*level_2/Y_surf) / 2
+            ax.plot_surface(X_surf,Y_surf, Z_surf2,color=(0.0, 1.0, 0.2, 0.3))
+
+            Z_surf3 = (X_surf*level_3/X_surf + Y_surf*level_3/Y_surf) / 2
+            ax.plot_surface(X_surf,Y_surf, Z_surf3,color=(0.0, 0.2, 0.8, 0.2))
+    side_roll = 0
+    col1, col2 = st.columns([1,8])
+    with col1:
         year_22 = st.checkbox("Show 2022 Data", value=False)
         if year_22:
             ax.scatter(df_22['SAT_Math'].values, 
                        df_22['SAT_Reading'].values,
                        df_22['NGSS'].values,
                        color=(0.5,0.0,0.5,1.0),s=16)
-    with col4:
+ 
         year_23 = st.checkbox("Show 2023 Data", value=False)
         if year_23:
             ax.scatter(df_23['SAT_Math'].values, 
@@ -102,8 +114,6 @@ def test_main_2():
                        df_23['NGSS'].values,
                        color=(0.0,1.0,1.0,1.0),s=16)
         
-
-    with col5:
         year_24 = st.checkbox("Show 2024 Data", value=False)
         if year_24:
             ax.scatter(df_24['SAT_Math'].values, 
@@ -111,7 +121,6 @@ def test_main_2():
                        df_24['NGSS'].values,
                        color=(1.0,1.0,0.0,1.0),s=16)
 
-    with col6:
         year_25 = st.checkbox("Show 2025 Data", value=False)
         if year_25:
             ax.scatter(df_25['SAT_Math'].values, 
@@ -120,9 +129,9 @@ def test_main_2():
                        color=(0.8,1.0,0.8,1.0),s=16)
 
     ax.view_init(elev = elevation, azim = azimuth, roll = side_roll)
-    
+    with col2:
     #plt.tight_layout()
-    st.pyplot(fig)
+        st.pyplot(fig)
 
 if __name__ == "__main__":
     test_main_2()
