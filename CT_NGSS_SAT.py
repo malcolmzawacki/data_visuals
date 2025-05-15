@@ -104,7 +104,7 @@ def main():
     year_confi_lower = year_df['Year Confidence Lower'].values
     year_confi_upper = year_df['Year Confidence Upper'].values
 
-    coeff = gam.coef_[-1]
+    #coeff = gam.coef_[-1]
     coeff = 44
     
     fig = plt.figure(figsize=(8,8), layout = 'constrained')
