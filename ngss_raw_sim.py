@@ -62,7 +62,7 @@ def test_main_2():
         Z_surf2 = (X_surf*1099/X_surf + Y_surf*1099/Y_surf) / 2  + 1
         ax.plot_surface(X_surf,Y_surf, Z_surf1,color=(0.0, 1.0, 0.2, 0.2))
         ax.plot_surface(X_surf,Y_surf, Z_surf2,color=(0.0, 1.0, 0.2, 0.2))
-    tensor_effect = 0
+    
     # Linear GAM trendline
     #ax.plot(df['SAT_Math'].values,df['SAT_Reading'].values, binom_pts,linewidth=4,c=(0.0,0.9,0.0,0.8))
     ax.plot(X_vals,Y_vals,math_effect + reading_effect + year_effect + tensor_effect + coeff,linewidth=4,c=(0.0,0.9,0.0,0.8))
