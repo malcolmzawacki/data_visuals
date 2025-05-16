@@ -5,7 +5,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 import datetime
 from pygam.distributions import BinomialDist
 
-df = pd.read_csv('ngss_data.csv')
+df = pd.read_csv('school_info/ngss_data.csv')
 train = df[df['Year']> 2021]
 test = df[df['Year'] < 2026]
 
@@ -44,7 +44,7 @@ if normalize:
     dist = BinomialDist(levels=199)
     link = 'logit'
 
-spline_stat_df = pd.read_csv('spline_stats.csv')
+spline_stat_df = pd.read_csv('school_info/spline_stats.csv')
 spline_num = spline_stat_df['Spline'].values
 spline_step = 2
 current_spline = list(spline_num)
@@ -128,21 +128,21 @@ if save:
         'Math_Effect': math_effect,
         'Math Confidence Lower': math_confi[:,0],
         'Math Confidence Upper': math_confi[:,1]
-    }).to_csv('math_spline.csv',index=False)
+    }).to_csv('school_info/math_spline.csv',index=False)
 
     pd.DataFrame({
         'SAT_Reading': reading_grid[:,1],
         'Reading_Effect': reading_effect,
         'Reading Confidence Lower': reading_confi[:,0],
         'Reading Confidence Upper': reading_confi[:,1]
-    }).to_csv('reading_spline.csv',index=False)
+    }).to_csv('school_info/reading_spline.csv',index=False)
 
     pd.DataFrame({
         'Year': year_grid[:,2],
         'Year_Effect': year_effect,
         'Year Confidence Lower': year_confi[:,0],
         'Year Confidence Upper': year_confi[:,1]
-    }).to_csv('year_spline.csv',index=False)
+    }).to_csv('school_info/year_spline.csv',index=False)
     if tensor:
         tensor_x, tensor_y = gam.generate_X_grid(term = 3, meshgrid=True, n=60)
         tensor_effect = gam.partial_dependence(term=3, X=(tensor_x, tensor_y), meshgrid=True)
@@ -150,17 +150,17 @@ if save:
             tensor_effect, 
             index=np.round(tensor_x[:,0],2), # rows = math
             columns = np.round(tensor_y[0],2) # cols = read
-        ).to_csv('tensor_surface.csv')
+        ).to_csv('school_info/tensor_surface.csv')
 
 
 pd.DataFrame({
     'Spline': spline_score,
     'Stat Values': r2,
     'coeff': gam.coef_[-1]
- }).to_csv('spline_stats.csv',index=False)
+ }).to_csv('school_info/spline_stats.csv',index=False)
 
 if tensor:
-    tensor_df = pd.read_csv('tensor_surface.csv', index_col = 0)
+    tensor_df = pd.read_csv('school_info/tensor_surface.csv', index_col = 0)
     tensor_df.columns = tensor_df.columns.astype(float)
     tensor_df.index = tensor_df.index.astype(float)
     tensor_effects = []
@@ -174,6 +174,6 @@ if tensor:
 
     pd.DataFrame({
         'Tensor Effect': tensor_effects
-    }).to_csv('tensor_effect.csv',index=False)
+    }).to_csv('school_info/tensor_effect.csv',index=False)
 
 

@@ -5,7 +5,7 @@ def test_main_2():
     import pandas as pd
     import numpy as np
 
-    df = pd.read_csv('ngss_data.csv')
+    df = pd.read_csv('school_info/ngss_data.csv')
     train = df[df['Year']> 2021]
     df_22 = df[df['Year']== 2022]
     df_23 = df[df['Year']== 2023]
@@ -16,28 +16,28 @@ def test_main_2():
     X_train = train[['SAT_Math','SAT_Reading']].values
     y_train = train['NGSS'].values
 
-    math_df = pd.read_csv('math_spline.csv')
+    math_df = pd.read_csv('school_info/math_spline.csv')
     math_effect = math_df['Math_Effect'].values
     math_confi_lower = math_df['Math Confidence Lower'].values
     math_confi_upper = math_df['Math Confidence Upper'].values
 
-    read_df = pd.read_csv('reading_spline.csv')
+    read_df = pd.read_csv('school_info/reading_spline.csv')
     reading_effect = read_df['Reading_Effect'].values
     read_confi_lower = read_df['Reading Confidence Lower'].values
     read_confi_upper = read_df['Reading Confidence Upper'].values
 
-    year_df = pd.read_csv('year_spline.csv')
+    year_df = pd.read_csv('school_info/year_spline.csv')
     year_effect = year_df['Year_Effect'].values
     year_confi_lower = year_df['Year Confidence Lower'].values
     year_confi_upper = year_df['Year Confidence Upper'].values
 
-    tensor_df = pd.read_csv('tensor_effect.csv')
+    tensor_df = pd.read_csv('school_info/tensor_effect.csv')
     tensor_effect = tensor_df['Tensor Effect'].values
 
-    spline_stat_df = pd.read_csv('spline_stats.csv')
+    spline_stat_df = pd.read_csv('school_info/spline_stats.csv')
     coeff = spline_stat_df['coeff'][1]
 
-    binom_df = pd.read_csv('ngss_binom_plot.csv')
+    binom_df = pd.read_csv('school_info/ngss_binom_plot.csv')
     binom_pts = binom_df['ngss_pred'].values
     
     import matplotlib.pyplot as plt
@@ -90,13 +90,13 @@ def test_main_2():
             X_surf,Y_surf = np.meshgrid(x_surf, y_surf)
             
             Z_surf1 = (X_surf*level_1/X_surf + Y_surf*level_1/Y_surf) / 2
-            ax.plot_surface(X_surf,Y_surf, Z_surf1,color=(1.0, 0.5, 0.0, 0.4))
+            ax.plot_surface(X_surf,Y_surf, Z_surf1,color=(1.0, 0.0, 0.0, 0.4))
             
             Z_surf2 = (X_surf*level_2/X_surf + Y_surf*level_2/Y_surf) / 2
-            ax.plot_surface(X_surf,Y_surf, Z_surf2,color=(0.0, 1.0, 0.2, 0.3))
+            ax.plot_surface(X_surf,Y_surf, Z_surf2,color=(0.0, 1.0, 0.0, 0.3))
 
             Z_surf3 = (X_surf*level_3/X_surf + Y_surf*level_3/Y_surf) / 2
-            ax.plot_surface(X_surf,Y_surf, Z_surf3,color=(0.0, 0.2, 0.8, 0.2))
+            ax.plot_surface(X_surf,Y_surf, Z_surf3,color=(0.0, 0.0, 1.0, 0.2))
     side_roll = 0
     col1, col2 = st.columns([1,8])
     with col1:
